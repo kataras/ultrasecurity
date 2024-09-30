@@ -1,7 +1,6 @@
-<div style="display: flex; align-items: center;">
-  <img src="ultrasecurity.png" alt="Description" width="36" height="36" style="margin-right: 10px;">
-  <h1>UltraSecurity</h1>
-</div>
+<div><img align="left" src="ultrasecurity.png" alt="Description" width="36" height="36"> <h1>UltraSecurity</h1></div>
+
+[![build status](https://img.shields.io/github/actions/workflow/status/kataras/ultrasecurity/ci.yml?branch=main&style=for-the-badge)](https://github.com/kataras/ultrasecurity/actions/workflows/ci.yml)
 
 **UltraSecurity** is a Go-based utility designed to enhance system security by monitoring the presence of a specific folder on the user's desktop. If the folder named `letsgo` is not found within 10 seconds of the program's execution, the system will automatically shut down. This tool is particularly useful for ensuring that certain security protocols are followed before allowing the system to remain operational.
 
