@@ -20,29 +20,29 @@
     go build -ldflags="-H=windowsgui -s -w" -o ultrasecurity.exe .
     ```
 
-    <details><summary>Build the Executable with Custom Folder Name and Timeout</summary>
+    <details><summary>Build the Executable with Custom Folder Name and Timeout</summary><br/>
 
     Use the -tags flag to specify the build tags and the -ldflags flag to pass the custom folder name and timeout when building your executable:
     ```sh
     go build -tags "folder timeout" -ldflags="-X main.folder=letsgo -X main.timeout=15s -H=windowsgui -s -w" -o ultrasecurity.exe .
     ```
 
+    ### Requirements
+
+    - **Operating System**: Windows 11
+    - **Go**: Version 1.23 or higher
+
 </details>
 
 2. **Place in Startup Folder**:
     Copy the `ultrasecurity.exe` to the Windows startup folder:
     ```sh
-    C:\Users\<YourUsername>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+    C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
     # Or press Win + R, type shell:startup, and press Enter
     # and move the executable to the opened folder.
     ```
 
     > This will ensure that the script runs every time the computer starts up. If the folder "letsgo" is not created on the desktop within 10 seconds, the computer will shut down.
-
-### Requirements
-
-- **Operating System**: Windows 11
-- **Go**: Version 1.23 or higher
 
 ## License
 
